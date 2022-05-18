@@ -154,9 +154,13 @@ button:active{
 	transform: scale(1.1);
 }
 
-/*.toggle button:hover{
-	background-color: #49A169;
-}*/
+.toggle button:hover{
+	color: hsl(205, 100%, 50%);
+}
+.toggle button:active{
+	transform: scale(1.2);
+}
+
 
 
 #surprise{
@@ -173,7 +177,9 @@ button:active{
 	background-color: #EBF7FF;
 }
 
-/*#surprise:hover{
-	color: #222;
+#surprise:hover{
+	border-color: #49A6E9;
 }
-*/
+#surprise:active{
+	transform: scale(1.1);
+}

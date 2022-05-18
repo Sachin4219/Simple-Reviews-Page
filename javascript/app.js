@@ -42,6 +42,7 @@ const image = document.getElementById('image');
 const name = document.querySelector('h3');
 const post = document.querySelector('h4');
 const comment = document.querySelector(".comment p");
+const surp = document.querySelector("#surprise");
 
 function change(val) {
 	index = index + val;
@@ -57,7 +58,11 @@ function change(val) {
 	comment.textContent = persons[index].comment;
 
 }
-// const surp = document.getElementById('surprise');
-// surp.addEventListener('hover', function(){
-// 	surp.style.color = "#222";
-// });
+
+surp.addEventListener("click", function(){
+	index = Math.floor(7*Math.random());
+	image.src = persons[index].url;
+	name.textContent = persons[index].name;
+	post.textContent = persons[index].post;
+	comment.textContent = persons[index].comment;
+});

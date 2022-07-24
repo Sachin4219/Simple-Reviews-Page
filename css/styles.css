@@ -179,6 +179,7 @@ button:active{
 	border-bottom-color: hsl(205, 100%, 30%);
 	border-right-color: hsl(205, 100%, 30%);
 	background-color: #EBF7FF;
+	cursor:pointer;
 }
 
 #surprise:hover{
